@@ -34,31 +34,17 @@ import ProductList from "./component/Admin/ProductList.js";
 import OrderList from "./component/Admin/OrderList";
 
 import UsersList from "./component/Admin/UsersList";
-// import UpdateUser from "./component/Admin/UpdateUser";
-// import ProductReviews from "./component/Admin/ProductReviews";
+
 import Contact from "./component/layout/Contact/Contact";
  import About from "./component/layout/About/About";
-// import NotFound from "./component/layout/Not Found/NotFound";
 
-//import ProtectedRoute from "./component/Route/ProtectedRoute";
 
 function App() {
 
 
 
   const { isAuthenticated, user } = useSelector((state) => state.user);
-//   const [ setRazorpayApiKey] = useState("");
 
-// async function getRazorpayApiKey() {
-//   try {
-//     const { data } = await axios.get("/api/v1/razorpayapikey");
-
-//     setRazorpayApiKey(data.razorpayApiKey);
-//   } catch (error) {
-//     // Handle error
-//     console.error("Error fetching Razorpay API key:", error);
-//   }
-// }
 
 const [stripeApiKey, setStripeApiKey] = useState("");
 
