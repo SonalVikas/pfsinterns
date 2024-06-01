@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#bgimg" class="logo">Sonal Salunkhe</a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="menu">
+                <li><a href="#bgimg">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+ <!--Home Page Starts -->
+    <div class="background-image" id="bgimg">
+        <div class="bgcontainer" >
+          <h1>Welcome to My Website</h1>
+          <p>Hello, I'm Sonal Salunkhe. I'm passionate about Software Development. This website is dedicated to sharing my journey and insights in Information Technology. </p>
+        </div>
+      </div>
+       <!--Home page ends -->
+       <!--About me Starts -->
+      <div id="about" class="about-section">
+        <div class="aboutcontainer">
+          <h2>About Me</h2>
+          <img src="images/id-dump.png" alt="">
+          <h3>Sonal Salunkhe</h3>
+          <p>Post:-Software Developer<br> Experience:-2 years <br> Company-Tech Mahindra Pvt. Ltd. <br> Date:- Aug-2021 to Aug-2023</p>
+          <div class="follow">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+              <a href="https://www.linkedin.com/in/sonal-salunkhe-a6a880172/" class="fab fa-linkedin"></a>
+          </div>
+
+           
+          </ul>
+          
+          <a href="/download/sonal_salunkhe_Developer.pdf" class="resumebtn" download>Download Resume</a>
+        </div>
+      </div>
+       <!--About Me ends -->
+       <!--Project section starts -->
+       <div class="slider-container" id="projects">
+        <h2>Projects</h2>
+        <div class="slider">
+          
+            <div class="project-slide">
+                <h2>Project 1</h2>
+                  <p>Ecommerce Website<br>
+                  Technology:-Salesforce commerce cloud.<br>
+                  Project Details-: House of Anita Dongre<br>
+                  Client Name-: Anita Dongre<br></p>
+                <a href="https://www.anitadongre.com">
+                  <img src="images/clients/anitadongre-logo.png" alt="brand-image" />
+                </a>
+  
+            </div>
+            
+            <div class="project-slide">
+                <h2>Project 2</h2>
+                <p>ERP System<br>
+                  Technology:-Html,Css,Javascript,Java<br>
+                  Project Details-: Institute Interactive Dashboard<br>
+                  Developed to perform college student registration,attendance,result functions.<br></p>
+                  <a href="#">
+                    <img src="images/clients/College-Management-System.jpg" alt="brand-image" />
+                  </a>
+            </div>
+        </div>
+        <button class="prev" onclick="changeSlide(-1)" ><i class="fas fa-chevron-left"></i></button>
+        <button class="next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>
+    </div>
+         
+       
+      <!--Project section ends -->
+     <!-- contact section starts  -->
+<div class="contact" id="contact">
+     <div class="contactcontainer">
+      <form id="contactForm">
+        <h2>Contact Us</h2>
+        <div class="input-group">
+        <input type="text" id="name" placeholder="Name" required>
+          
+        </div>
+        <div class="input-group">
+          <input type="email" id="email"  placeholder="Email" required>
+          
+        </div>
+        <div class="input-group">
+          <textarea  rows="5" id="message" placeholder="Message" required></textarea>
+          
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+</div>
+<!-- contact section ends -->
+
+<!-- footer section starts  -->
+
+<div class="footer">
+
+  <div class="credit">Created by <span>Sonal Salunkhe</span> | all rights reserved</div>
+
+</div>
+
+<!-- footer section ends -->
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
