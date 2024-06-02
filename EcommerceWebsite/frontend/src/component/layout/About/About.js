@@ -4,7 +4,7 @@ import { Button, Typography, Avatar } from "@material-ui/core";
 
 const About = () => {
   const visitInstagram = () => {
-    window.location = "https://instagram.com/meabhisingh";
+    window.location = "";
   };
   return (
     <div className="aboutSection">
